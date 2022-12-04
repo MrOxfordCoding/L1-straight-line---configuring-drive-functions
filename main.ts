@@ -1,4 +1,8 @@
 input.onButtonPressed(Button.A, function () {
+    kitronik_klip_motor.motorOn(kitronik_klip_motor.Motors.Motor1, kitronik_klip_motor.MotorDirection.Forward, 100)
+    kitronik_klip_motor.motorOn(kitronik_klip_motor.Motors.Motor2, kitronik_klip_motor.MotorDirection.Forward, 100)
+})
+input.onButtonPressed(Button.B, function () {
     drive_forward(2000)
 })
 function drive_forward (time: number) {
